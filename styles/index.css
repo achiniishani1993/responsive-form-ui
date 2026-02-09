@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Cormorant Garamond", serif;
+}
 .contact-container{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -52,6 +54,10 @@
   display: block;
   margin: 25px auto;
 
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 .contact-map img {
    width: 100%;
