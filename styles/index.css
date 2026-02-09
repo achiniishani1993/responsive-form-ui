@@ -5,28 +5,125 @@
 }
 body {
   font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  min-height: 100vh;
+}
+section {
+  padding-block: 2rem;
 }
 
+/* video css */
 .video-container {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 95px;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: self-start;
+  position: relative;  /* need to align with popup */
+  margin: 0 auto;
+  padding: 50px;
 }
 
 .video {
-    width: 800px;
-    height: 428px;
-    margin-left: 47px;
+  flex: 1;
+  width: 100%;
+  height: auto;
 }
 
+/* popup css */
+
+.table-btn{
+  align-self: center;
+  background-color: #20424B;
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0.02rem;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 184px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.popup {
+  flex: 1;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  z-index: 10;
+}
+.popup:target {
+  display: block;
+}
+
+.popup-content {
+  background-color: #14f25d;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  margin: 0;
+  border-radius: 0px;
+ 
+}
+.popup-content h2 {
+ font-size: 36px;
+ font-weight: 400;
+ font-style: normal;
+ text-align: center;
+
+}
+.popup-content form div {
+ padding: 20px;
+ display: block;
+}
+.popup-content form {
+ padding: 10px;
+}
+.popup-content form label {
+ font-size: 20px;
+ font-weight: 400;
+ font-style: normal;
+ 
+}
+.popup-content form input, .popup-content form select{
+ width: 100%;
+ min-height: 40px;
+ padding: 10px;
+}
+
+.booknow-btn{
+  display: inline-block;
+  margin-top: 10px;
+  background: #20424B;
+  color: #FFFFFF;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+}
+.close-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: red;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border-radius: 4px;
+}
+/* Contact us section */
 .contact-container{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 7px;
   align-items: stretch;
   margin-top: 200px;
+ 
 }
 .contact-container div {
   text-align:left;

@@ -17,15 +17,59 @@
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
   <body>
-    <main>
+    <main class="page">
       <section class="video-container">
         <div class="video">
-          <video width="800" height="430" controls="">
+          <video width="900" height="500" controls="">
             <source src="/Video/Caffe Norra.mp4" type="video/mp4" />
           </video>
         </div>
-        <div class="table-btn">
-          <button type="button">Book a Table</button>
+        
+         <a href="#popupForm" class="table-btn">Book a Table</a>
+          <div id="popupForm" class="popup">
+             <div class="popup-content">
+             <h2>Reserve a Table</h2>
+            <form >
+              <div>
+              <label for="persons">Party size</label>
+              <select name="persons" id="persons">
+                <option value="1-2 guests">1-2 guests</option>
+                <option value="2-4 guests">2-4 guests</option>
+                <option value="4-6 guests">4-6 guests</option>
+                <option value="8-more guests">8-more guests</option>
+              </select> 
+               </div>
+               <div>
+               <label for="date">Date</label>
+               <input type="date" id="date" name="date" required>
+              </div>
+              <div>
+                <label for="time">Time</label>
+              <select name="time" id="time">
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="5:15 PM">5:15 PM</option>
+                <option value="5:30 PM">5:30 PM</option>
+                <option value="5:45 PM">5:45 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="6:15 PM">6:15 PM</option>
+                <option value="6:30 PM">6:30 PM</option>
+                <option value="6:45 PM">6:45 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+                <option value="7:15 PM">7:15 PM</option>
+                <option value="7:30 PM">7:30 PM</option>
+                <option value="7:45 PM">7:45 PM</option>
+                <option value="8:00 PM">8:00 PM</option>
+                <option value="8:15 PM">8:15 PM</option>
+                <option value="8:30 PM">8:30 PM</option>
+                <option value="8:45 PM">8:45 PM</option>
+                <option value="9:00 PM">9:00 PM</option>
+              </select>
+            </div>
+              <button type="submit" class="booknow-btn">Book Now</button>
+              <a href="#" class="close-btn">Close</a>
+            </form>
+            </div>
+         
         </div>
       </section>
       <section class="contact-container">
