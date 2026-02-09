@@ -1,5 +1,5 @@
 *,
-*::before,  
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
 }
 section {
-  padding-block: 1rem;
+  padding-block: 12rem;
 }
 
 /* video css */
@@ -17,7 +17,7 @@ section {
   display: flex;
   width: 100%;
   align-items: self-start;
-  position: relative;  /* need to align with popup */
+  position: relative; /* need to align with popup */
   margin: 0 auto;
   padding: 50px;
 }
@@ -30,23 +30,24 @@ section {
 
 /* popup css */
 
-.table-btn{
+.table-btn {
   align-self: center;
-  background-color: #20424B;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
+  background-color: #20424b;
   letter-spacing: 0.02rem;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 184px;
+  border-radius: 4px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   text-decoration: none;
-  border-radius: 4px;
 }
-.table-btn:hover{
+.table-btn:hover {
   color: #14f25d;
 }
 
@@ -70,110 +71,106 @@ section {
   padding: 30px;
   margin: 0;
   border-radius: 0px;
- 
 }
 .popup-content h2 {
- font-size: 36px;
- font-weight: 400;
- font-style: normal;
- text-align: center;
-
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
 .popup-content form div {
- padding: 20px;
- display: block;
+  padding: 20px;
+  display: block;
 }
 .popup-content form {
- padding: 10px;
+  padding: 10px;
 }
 .popup-content form label {
- font-size: 20px;
- font-weight: 400;
- font-style: normal;
- 
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
 }
-.popup-content form input, .popup-content form select{
- width: 100%;
- min-height: 40px;
- padding: 10px;
+.popup-content form input,
+.popup-content form select {
+  width: 100%;
+  min-height: 40px;
+  padding: 10px;
+  
 }
 
-.booknow-btn{
+.booknow-btn {
   display: inline-block;
   margin-top: 10px;
-  background: #20424B;
-  color: #FFFFFF;
+  background: #20424b;
+  color: #ffffff;
   padding: 10px;
   text-decoration: none;
   text-align: center;
   width: 100%;
   border: none;
   border-radius: 4px;
+  margin-bottom: 4px;
 
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
 }
-.booknow-btn:hover{
+.booknow-btn:hover {
   color: #14f25d;
 }
 .close-btn {
   display: inline-block;
   margin-top: 10px;
   background: #f44336;
-  color: white;
+  color: #ffffff;
   padding: 10px;
   text-decoration: none;
   text-align: center;
   width: 100%;
   border-radius: 4px;
 }
-.close-btn:hover{
+.close-btn:hover {
   color: #14f25d;
 }
 /* Contact us section */
-.contact-container{
+.contact-container {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 7px;
   align-items: stretch;
-  margin-top: 200px;
- 
 }
 .contact-container div {
-  text-align:left;
+  text-align: left;
 }
 .contact-form {
   margin-left: 47px;
 }
 
 .contact-form h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    color: #20424B;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #20424b;
 }
 .contact-form input {
   width: 100%;
   min-height: 64px;
   padding: 12px;
   margin: 10px 0;
-  border: 3px solid #14F25D;
+  border: 3px solid #14f25d;
   border-radius: 4px;
 }
 
-.contact-form input[type=submit] {
+.contact-form input[type="submit"] {
   max-width: 193px;
   width: 100%;
   min-height: 50px;
   background-color: #14f25d;
-  color: #20424B;
+  color: #20424b;
   font-size: 20px;
-  font-family: "Cormorant Garamond", serif;
   font-style: normal;
   font-weight: 400;
-  padding: 14px;
+  padding: 16px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
@@ -181,15 +178,13 @@ section {
 
   display: block;
   margin: 25px auto;
-
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 .contact-map img {
-   width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
