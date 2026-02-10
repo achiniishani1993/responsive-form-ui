@@ -16,7 +16,7 @@ section {
 .video-container {
   display: flex;
   width: 100%;
-  align-items: self-start;
+  align-self:flex-start;
   position: relative; /* need to align with popup */
   margin: 0 auto;
   padding: 50px;
